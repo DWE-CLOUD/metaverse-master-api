@@ -5,11 +5,41 @@
 ---
 ##### Starting
 
+##### command to activate venv and start
+
+To activate the virtual environment and start your FastAPI application manually, use these commands:
+
 ```bash
 cd ~/fastapi-iot
 source venv/bin/activate
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
+
+Alternatively, if you've set up the systemd service, you can start it with:
+
+```bash
+systemctl start fastapi
+```
+
+To check the status of your service:
+
+```bash
+systemctl status fastapi
+```
+
+If you need to restart the service after making changes:
+
+```bash
+systemctl restart fastapi
+```
+
+And to view the logs:
+
+```bash
+journalctl -u fastapi -f
+```
+
+
 
 # Complete Guide to Building a ThingSpeak-like IoT Platform with FastAPI
 
