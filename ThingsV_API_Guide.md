@@ -3,6 +3,13 @@
 # 
 
 ---
+##### Starting
+
+```bash
+cd ~/fastapi-iot
+source venv/bin/activate
+uvicorn main:app --host 0.0.0.0 --port 8000
+```
 
 # Complete Guide to Building a ThingSpeak-like IoT Platform with FastAPI
 
